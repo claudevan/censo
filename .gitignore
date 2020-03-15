@@ -3,3 +3,13 @@
 ################################################################################
 
 /Censo/.vs/Censo/v16/Server/sqlite3
+/Censo/src/Censo.API/bin
+/Censo/src/Censo.API/obj
+/Censo/src/Censo.Application/bin/Debug/netcoreapp3.1
+/Censo/src/Censo.Application/obj
+/Censo/src/Censo.Domain.Core/bin/Debug/netcoreapp3.1
+/Censo/src/Censo.Infra.CrossCutting.IoC/bin/Debug/netcoreapp3.1
+/Censo/src/Censo.Infra.CrossCutting.IoC/obj/Debug/netcoreapp3.1
+/Censo/src/Censo.Infra.CrossCutting.IoC/obj
+/Censo/src/Censo.Infra.Data.Repository/bin/Debug/netcoreapp3.1
+/Censo/src/Censo.Infra.Data.Repository/obj

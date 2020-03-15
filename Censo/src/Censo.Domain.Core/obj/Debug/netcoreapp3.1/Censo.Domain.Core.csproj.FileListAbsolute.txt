@@ -1,0 +1,8 @@
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\bin\Debug\netcoreapp3.1\Censo.Domain.Core.deps.json
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\bin\Debug\netcoreapp3.1\Censo.Domain.Core.dll
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\bin\Debug\netcoreapp3.1\Censo.Domain.Core.pdb
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.csprojAssemblyReference.cache
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.AssemblyInfoInputs.cache
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.AssemblyInfo.cs
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.dll
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.pdb
