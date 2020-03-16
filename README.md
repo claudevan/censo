@@ -21,3 +21,10 @@
 - [ ] Repository Pattern
 - [ ] Unit of Work Pattern
 - [ ] Automapper
+
+## Banco de Dados
+- Utilizar CTE para consultas recursivas, para Buscar Pais e Filhos
+- Criar DB
+- Criar tabelas Auxiliares (Etnia, Genero, Escolaridade, Região)
+- Criar tabelas (Pessoa)
+- Criar Tabelas de relacionamento (Filhos, Pais)
