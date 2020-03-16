@@ -1,4 +1,5 @@
 using Censo.API.Setup;
+using Censo.Infra.CrossCutting.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +30,8 @@ namespace Censo.API
             services.AddSwaggerSetup();
             services.AddVersioningSetup();
             services.AddCompressionSetup();
+
+            Bootstrapper.RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

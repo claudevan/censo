@@ -17,5 +17,7 @@
 - [x] Documentação (Swagger)
 - [x] POO + (Value Objects, DTO, View Models)
 - [x] Verionamento de API
+- [x] Health Check
 - [ ] Repository Pattern
 - [ ] Unit of Work Pattern
+- [ ] Automapper

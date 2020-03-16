@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Censo.Application;
+using Censo.Application.Interfaces;
+using Censo.Infra.Data.Repository;
+using Censo.Infra.Data.Repository.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Censo.Infra.CrossCutting.IoC
 {
@@ -10,9 +14,10 @@ namespace Censo.Infra.CrossCutting.IoC
             //services.AddFluentValidation();
 
             //Aplication
-            //services.AddTransient<IValidator<PeopleVM>, PeopleVMValidator>();
+            services.AddScoped<IPeopleService, PeopleService>();
 
             //Data
+            //services.AddScoped<IPeopleRepository, PeopleRepository>();
         }
     }
 }

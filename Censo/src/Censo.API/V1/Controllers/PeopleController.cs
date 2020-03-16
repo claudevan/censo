@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Censo.Application.Interfaces;
 using Censo.Application.ViewModels;
 
 namespace Censo.API.V1.Controllers
@@ -12,10 +13,17 @@ namespace Censo.API.V1.Controllers
     [ApiController]
     public class PeopleController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IPeopleService _service;
+
+        public PeopleController(IPeopleService service)
         {
-            return new string[] { "value1", "value2" };
+            _service = service;
+        }
+
+        [HttpGet]
+        public ActionResult Get()
+        {
+            return Ok(_service.List());
         }
 
         //[HttpGet("{id}", Name = "Get")]
@@ -27,7 +35,7 @@ namespace Censo.API.V1.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] PeopleVM people)
         {
-            return Created("", people);
+            return Created("", _service.Save(people));
         }
     }
 }

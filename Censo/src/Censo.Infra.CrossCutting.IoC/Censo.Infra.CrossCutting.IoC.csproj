@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Censo.Application\Censo.Application.csproj" />
+    <ProjectReference Include="..\Censo.Infra.Data.Repository\Censo.Infra.Data.Repository.csproj" />
   </ItemGroup>
 
 </Project>

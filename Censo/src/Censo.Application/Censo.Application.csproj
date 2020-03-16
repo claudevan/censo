@@ -10,10 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Censo.Domain.Core\Censo.Domain.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\Censo.Infra.Data.Repository\Censo.Infra.Data.Repository.csproj" />
   </ItemGroup>
 
 </Project>
