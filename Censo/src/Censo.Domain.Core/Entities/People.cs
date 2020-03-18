@@ -1,12 +1,19 @@
 ﻿using Censo.Domain.Core.Entities.Base;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using Censo.Domain.Core.ValueObjects;
 
 namespace Censo.Domain.Core.Entities
 {
+    [Table("TB_People")]
     public class People : EntityBase
     {
-        public People(Document document, DateTime birthdate, string firstName, string lastName, Guid ethnicityId, Guid genderId, Guid educationalId, Guid districtId)
+        public People()
+        {
+            
+        }
+
+        public People(string document, DateTime birthdate, string firstName, string lastName, Guid ethnicityId, Guid genderId, Guid educationalId, Guid districtId)
         {
             Document = document;
             Birthdate = birthdate;
@@ -18,14 +25,14 @@ namespace Censo.Domain.Core.Entities
             DistrictId = districtId;
         }
 
-        public Document Document { get; private set; }
-        public DateTime Birthdate { get; private set; }
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-        public Guid EthnicityId { get; private set; }
-        public Guid GenderId { get; private set; }
-        public Guid EducationalId { get; private set; }
-        public Guid DistrictId { get; private set; }
+        public string Document { get; set; }
+        public DateTime Birthdate { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public Guid EthnicityId { get; set; }
+        public Guid GenderId { get; set; }
+        public Guid EducationalId { get; set; }
+        public Guid DistrictId { get; set; }
 
     }
 }

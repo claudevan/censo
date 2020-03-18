@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using System.Data;
+using Microsoft.Data.SqlClient;
 
 namespace Censo.Infra.Data.Repository.Base
 {
@@ -14,7 +15,9 @@ namespace Censo.Infra.Data.Repository.Base
         protected SqlConnection GetConnection()
         {
             var cnn = new SqlConnection(strConnection);
-            cnn.Open();
+
+            if(cnn.State != ConnectionState.Open)
+                cnn.Open();
 
             return cnn;
         }

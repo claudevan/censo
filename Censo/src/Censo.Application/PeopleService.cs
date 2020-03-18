@@ -12,18 +12,18 @@ namespace Censo.Application
     public class PeopleService : IPeopleService
     {
         private readonly IPeopleRepository _repository;
-        private readonly IConfiguration _configuration;
+        //private readonly IConfiguration _configuration;
 
-        public PeopleService(IPeopleRepository repository, IConfiguration configuration)
+        public PeopleService(IPeopleRepository repository/*, IConfiguration configuration*/)
         {
             _repository = repository;
-            _configuration = configuration;
+            //_configuration = configuration;
         }
 
         public bool Save(PeopleVM people)
         {
             //TODO: Trocar pelo automapper
-            var entity = new People(new Document {Number = people.Document}, people.Birthdate, people.FirstName,
+            var entity = new People(people.Document, people.Birthdate, people.FirstName,
                 people.LastName, people.EthnicityId, people.GenderId, people.EducationalId, people.DistrictId);
             
             var result = _repository.Add(entity);
@@ -46,7 +46,7 @@ namespace Censo.Application
                     FirstName = people.FirstName,
                     LastName = people.LastName,
                     DistrictId =  people.DistrictId,
-                    Document =  people.Document.Number,
+                    Document =  people.Document,
                 });
             }
 

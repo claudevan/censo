@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Censo.Domain.Core.Entities.Base
 {
@@ -10,6 +11,7 @@ namespace Censo.Domain.Core.Entities.Base
             Active = true;
         }
 
+        [Key]
         public Guid Id { get; private set; }
         public DateTime CreateAt { get; private set; }
         public DateTime AlterAt { get; private set; }

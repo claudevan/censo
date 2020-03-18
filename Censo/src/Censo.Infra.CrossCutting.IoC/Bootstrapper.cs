@@ -17,7 +17,7 @@ namespace Censo.Infra.CrossCutting.IoC
             services.AddScoped<IPeopleService, PeopleService>();
 
             //Data
-            //services.AddScoped<IPeopleRepository, PeopleRepository>();
+            services.AddScoped<IPeopleRepository, PeopleRepository>();
         }
     }
 }
