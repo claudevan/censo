@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using Censo.Application.Interfaces;
+﻿using Censo.Application.Interfaces;
 using Censo.Application.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Censo.API.V1.Controllers
 {

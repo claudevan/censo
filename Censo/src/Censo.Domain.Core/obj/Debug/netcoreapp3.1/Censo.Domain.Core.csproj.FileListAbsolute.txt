@@ -6,3 +6,4 @@ E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\n
 E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.dll
 E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.pdb
 E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.csproj.CoreCompileInputs.cache
+E:\Projetos programação\Desafios\Censo\Censo\src\Censo.Domain.Core\obj\Debug\netcoreapp3.1\Censo.Domain.Core.csprojAssemblyReference.cache
