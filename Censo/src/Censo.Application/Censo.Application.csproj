@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <ProjectReference Include="..\Censo.Domain.Core\Censo.Domain.Core.csproj" />
+    <ProjectReference Include="..\Censo.Infra.Data.Repository\Censo.Infra.Data.Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Censo.Domain.Core\Censo.Domain.Core.csproj" />
-    <ProjectReference Include="..\Censo.Infra.Data.Repository\Censo.Infra.Data.Repository.csproj" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
   </ItemGroup>
 
 </Project>

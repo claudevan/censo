@@ -1,4 +1,6 @@
+using AutoMapper;
 using Censo.API.Setup;
+using Censo.Application.AutoMapper;
 using Censo.Infra.CrossCutting.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +34,8 @@ namespace Censo.API
             services.AddCompressionSetup();
 
             Bootstrapper.RegisterServices(services);
+
+            services.AddAutoMapper(typeof(DomainToViewModelMappingProfile), typeof(ViewModelToDomainMappingProfile));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
