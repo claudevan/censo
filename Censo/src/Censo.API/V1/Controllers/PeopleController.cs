@@ -1,4 +1,5 @@
-﻿using Censo.Application.Interfaces;
+﻿using System;
+using Censo.Application.Interfaces;
 using Censo.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,11 +26,11 @@ namespace Censo.API.V1.Controllers
             return Ok(_service.List());
         }
 
-        //[HttpGet("{id}", Name = "Get")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
+        [HttpGet("{id}", Name = "Get")]
+        public ActionResult Get(Guid id)
+        {
+            return Ok(_service.Get(id));
+        }
 
         [HttpPost]
         public ActionResult Post([FromBody] PeopleVM people)

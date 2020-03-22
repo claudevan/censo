@@ -1,4 +1,5 @@
-﻿using Censo.Application.Interfaces;
+﻿using System;
+using Censo.Application.Interfaces;
 using Censo.Application.ViewModels;
 using Censo.Domain.Core.Entities;
 using Censo.Infra.Data.Repository.Interfaces;
@@ -28,6 +29,16 @@ namespace Censo.Application
         public IEnumerable<PeopleVM> List()
         {
             return _mapper.Map<IEnumerable<PeopleVM>>(_repository.List());
+        }
+
+        public PeopleVM Get(Guid id)
+        {
+            var people = _mapper.Map<PeopleVM>(_repository.GetById(id));
+
+            people.Parents = _mapper.Map<IEnumerable<RelantionshipVM>>(_repository.GetParents(id));
+            people.Sons = _mapper.Map<IEnumerable<RelantionshipVM>>(_repository.GetSons(id));
+
+            return people;
         }
     }
 }

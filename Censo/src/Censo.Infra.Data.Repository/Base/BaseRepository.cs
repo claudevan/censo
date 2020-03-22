@@ -27,7 +27,7 @@ namespace Censo.Infra.Data.Repository.Base
             return Connection.GetAll<T>(null, commandTimeout);
         }
 
-        public virtual T GetById(int id, int? commandTimeout = null)
+        public virtual T GetById(Guid id, int? commandTimeout = null)
         {
             return Connection.Get<T>(id, null, commandTimeout);
         }

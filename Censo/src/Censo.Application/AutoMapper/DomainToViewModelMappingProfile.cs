@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Censo.Application.ViewModels;
 using Censo.Domain.Core.Entities;
-using Censo.Domain.Core.ValueObjects;
 
 namespace Censo.Application.AutoMapper
 {
@@ -11,7 +10,7 @@ namespace Censo.Application.AutoMapper
         {
             CreateMap<People, PeopleVM>();
 
-            //CreateMap<Categoria, CategoriaViewModel>();
+            CreateMap<People, RelantionshipVM>();
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.VisualBasic;
 
 namespace Censo.Application.ViewModels
 {
@@ -29,9 +28,8 @@ namespace Censo.Application.ViewModels
         [Required(ErrorMessage = "{0} - campo obrigatório")]
         public Guid DistrictId { get; set; }
 
-        //TODO: Revisar se funciona
-        public IEnumerable<Guid> Sons { get; set; }
-        public IEnumerable<Guid> Parents { get; set; }
+        public IEnumerable<RelantionshipVM> Sons { get; set; }
+        public IEnumerable<RelantionshipVM> Parents { get; set; }
         
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {

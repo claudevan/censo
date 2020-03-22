@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Censo.Application.ViewModels;
 
 namespace Censo.Application.Interfaces
@@ -7,5 +8,6 @@ namespace Censo.Application.Interfaces
     {
         bool Save(PeopleVM people);
         IEnumerable<PeopleVM> List();
+        PeopleVM Get(Guid id);
     }
 }
